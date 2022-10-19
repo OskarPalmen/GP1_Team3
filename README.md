@@ -1,2 +1,2 @@
-# GP1Test
-This is a stes from grupp 3 o nhow github works
+# GP1_Github
+before you upload whiles into github desktop dont forget to add an gitignore file into your projekt.
