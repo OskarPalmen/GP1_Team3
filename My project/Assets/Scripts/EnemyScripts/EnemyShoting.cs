@@ -18,6 +18,7 @@ public class EnemyShoting : MonoBehaviour
 
 
     // Start is called before the first frame update
+    // Finds the player tag
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -28,6 +29,7 @@ public class EnemyShoting : MonoBehaviour
     }
 
     // Update is called once per frame
+    // This function sets the shooting speed and that the enemy should follow the player at a set distance
     void Update()
     {
         if(Vector2.Distance(transform.position, player.position) > stoppingDistance)

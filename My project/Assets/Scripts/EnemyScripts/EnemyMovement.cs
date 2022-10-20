@@ -11,6 +11,8 @@ public class EnemyMovement : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //this transforms the projektives position
     void Update()
     {
         Vector3 position = this.transform.position;

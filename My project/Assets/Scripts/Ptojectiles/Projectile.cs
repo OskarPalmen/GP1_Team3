@@ -14,19 +14,21 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //the projectile goes after the tag "Player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        //the projectile goes after the player's position
         target = new Vector2(player.position.x, player.position.y);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //the projektile moves twords the set potision
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
-        if(transform.position.x == target.x && transform.position.y == target.y)
+        //when it has reached its end destination destroy the projectile
+        if (transform.position.x == target.x && transform.position.y == target.y)
         {
             DestroyProjectile();
         }
@@ -35,12 +37,14 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //if the projectile collides with a player tag destroy the projectile
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
         }
     }
 
+    //funktion that destroys the projectile
     void DestroyProjectile()
     {
         Destroy(gameObject);
