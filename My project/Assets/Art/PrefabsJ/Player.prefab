@@ -1238,8 +1238,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28d013142cf6a74e9f8cb95b62ec4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inAirTimer: 0
+  leapingVelocity: 0
+  fallingVelocity: 0
+  rayCastHeightOffset: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isGrounded: 0
+  isJumping: 0
   movementSpeed: 7
   rotationSpeed: 15
+  jumpHeight: 3
+  gravityIntensity: -15
 --- !u!114 &5711338912127573249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,6 +1263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb7d9f04164a594abd730ac8eee405e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInteracting: 0
 --- !u!114 &5711338912127573250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,6 +1279,7 @@ MonoBehaviour:
   movementInput: {x: 0, y: 0}
   verticalInput: 0
   horizontalInput: 0
+  jump_Input: 0
 --- !u!1 &5124575656533355219
 GameObject:
   m_ObjectHideFlags: 0

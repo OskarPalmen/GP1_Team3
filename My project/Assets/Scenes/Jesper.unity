@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328b6ac4a1258df42b52f4bde01f982e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 56717300}
 --- !u!1 &101156782
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5244574832924464054, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.69
+      value: 8.635
       objectReference: {fileID: 0}
     - target: {fileID: 5244574832924464054, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: m_LocalPosition.z
@@ -888,8 +889,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
+      propertyPath: jumpHeight
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: movementSpeed
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: rotationSpeed
@@ -897,11 +902,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: fallingVelocity
-      value: 100
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: leapingVelocity
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
+      propertyPath: gravityIntensity
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: groundLayer.m_Bits
@@ -910,6 +919,10 @@ PrefabInstance:
     - target: {fileID: 5711338912127573248, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
       propertyPath: rayCastHeightOffset
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711338912127573250, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
+      propertyPath: jump_Input
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42048c518c0806d48bb2bfb23b83d375, type: 3}
