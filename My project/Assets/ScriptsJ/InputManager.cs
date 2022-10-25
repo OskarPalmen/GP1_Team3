@@ -13,7 +13,9 @@ public class InputManager : MonoBehaviour
     public float verticalInput;
     public float horizontalInput;
 
+    [Header("Button Inputs")]
     public bool jump_Input;
+    public bool shootInput;
 
     private void Awake()
     {
@@ -30,6 +32,9 @@ public class InputManager : MonoBehaviour
             playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
 
             playerControls.PlayerActions.Jump.performed += i => jump_Input = true;
+
+            playerControls.PlayerActions.Shoot.performed += i => shootInput = true;
+            playerControls.PlayerActions.Shoot.canceled += i => shootInput = false;
         }
 
         playerControls.Enable();
@@ -45,6 +50,7 @@ public class InputManager : MonoBehaviour
         HandleMovementInput();
         HandleJumpingInput();
         //HandleActionInput
+        HandleShootingInput();
     }
     private void HandleMovementInput()
     {
@@ -60,6 +66,15 @@ public class InputManager : MonoBehaviour
         {
             jump_Input = false;
             playerLocomotion.HandleJumping();
+        }
+    }
+
+    private void HandleShootingInput()
+    {
+        if (shootInput)
+        {
+            shootInput = false;
+            Debug.Log("BANG");
         }
     }
 }
