@@ -113,5 +113,5 @@ MonoBehaviour:
   speed: 0
   stoppingDistance: 0
   retreatDistance: 0
-  startTimeBtwShots: 4
+  startTimeBtwShots: 2
   projectile: {fileID: 3227905694022134991, guid: 7f4266ec4e93c294180a61c4f6904fa0, type: 3}

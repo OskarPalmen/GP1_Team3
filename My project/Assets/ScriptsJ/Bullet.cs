@@ -11,6 +11,24 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, life);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        //if the projectile collides with a player tag destroy the projectile
+        if (other.CompareTag("Player"))
+        {
+            DestroyProjectile();
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            DestroyProjectile();
+        }
+    }
+
+    //funktion that destroys the projectile
+    void DestroyProjectile()
+    {
+        Destroy(gameObject);
+    }
     /*private void OnCollisionEnter(Collision collision)
     {
         Destroy(collision.gameObject);

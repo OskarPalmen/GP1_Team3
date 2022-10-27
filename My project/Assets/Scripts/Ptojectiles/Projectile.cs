@@ -41,6 +41,9 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
+        } else if (other.CompareTag("Wall"))
+        {
+            DestroyProjectile();
         }
     }
 

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Futuristic_soldier_Green
+  m_Name: Futuristic_soldier_Blue
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: e380564cae54528459b0cd9251162d52, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2514d0b1f154088499e4cb376c4015f9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -41,15 +41,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fcc69a96f07915c4a8abc04a2d0d979e, type: 3}
+        m_Texture: {fileID: 2800000, guid: b8c9af17ad5c91b42827930503054c4e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 24a77f908ad100d4c85417710bae89e3, type: 3}
+        m_Texture: {fileID: 2800000, guid: f362f4da06450704abe0bbae152cf1d0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: e2beddba07170ae4e9dd87b20c750732, type: 3}
+        m_Texture: {fileID: 2800000, guid: d1a53df2205a16048937dd18f72c762d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
