@@ -10,7 +10,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     Vector3 moveDirection;
     Transform cameraObject;
-    Rigidbody playerRigidbody;
+    private Rigidbody playerRigidbody;
 
     [Header("Falling")]
     public float inAirTimer;
@@ -26,9 +26,9 @@ public class PlayerLocomotion : MonoBehaviour
     public float movementSpeed = 7;
     public float rotationSpeed = 15;
 
-    [Header("Jump Speeds")]
+    /*[Header("Jump Speeds")]
     public float jumpHeight = 3;
-    public float gravityIntensity = -15;
+    public float gravityIntensity = -15;*/
 
     private void Awake()
     {
@@ -43,8 +43,7 @@ public class PlayerLocomotion : MonoBehaviour
     {
         HandleFallingAndLanding();
 
-        if (playerManager.isInteracting)
-            return;
+        
 
         HandleMovement();
         HandleRotation();
@@ -58,7 +57,7 @@ public class PlayerLocomotion : MonoBehaviour
         moveDirection = cameraObject.forward * inputManager.verticalInput;
         moveDirection = moveDirection + cameraObject.right * inputManager.horizontalInput;
         moveDirection.Normalize();
-        moveDirection.y = 0;
+        //moveDirection.y = 0;
         moveDirection = moveDirection * movementSpeed;
 
         Vector3 movementVelocity = moveDirection;
@@ -127,10 +126,15 @@ public class PlayerLocomotion : MonoBehaviour
             animatorManager.animator.SetBool("isJumping", true);
             animatorManager.PlayTargetAnimation("Jump", false);
 
-            float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
+            playerRigidbody.AddForce(Vector3.up * 15f, ForceMode.Impulse);
+
+           
+            /*float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
             Vector3 playerVelocity = moveDirection;
             playerVelocity.y = jumpingVelocity;
-            playerRigidbody.velocity = playerVelocity;
+            playerRigidbody.velocity = playerVelocity;*/
         }
+
+        
     }
 }
