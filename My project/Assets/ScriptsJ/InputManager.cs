@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class InputManager : MonoBehaviour
     [Header("Button Inputs")]
     public bool jump_Input;
     public bool shootInput;
+    public bool resetInput;
 
     private void Awake()
     {
@@ -35,6 +37,8 @@ public class InputManager : MonoBehaviour
 
             playerControls.PlayerActions.Shoot.performed += i => shootInput = true;
             playerControls.PlayerActions.Shoot.canceled += i => shootInput = false;
+
+            playerControls.PlayerActions.Reset.performed += i => resetInput = true;
         }
 
         playerControls.Enable();
@@ -75,6 +79,17 @@ public class InputManager : MonoBehaviour
         {
             shootInput = false;
             Debug.Log("BANG");
+        }
+    }
+
+    public void ResetScene()
+
+    {
+        if (resetInput)
+        {
+            resetInput = false;
+            Debug.Log("Reset");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
