@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class PlayerLocomotion : MonoBehaviour
 {
     PlayerManager playerManager;
@@ -29,7 +29,7 @@ public class PlayerLocomotion : MonoBehaviour
     /*[Header("Jump Speeds")]
     public float jumpHeight = 3;
     public float gravityIntensity = -15;*/
-
+/*
     private void Awake()
     {
         playerManager = GetComponent<PlayerManager>();
@@ -133,8 +133,10 @@ public class PlayerLocomotion : MonoBehaviour
             Vector3 playerVelocity = moveDirection;
             playerVelocity.y = jumpingVelocity;
             playerRigidbody.velocity = playerVelocity;*/
+/*
         }
 
         
     }
 }
+*/

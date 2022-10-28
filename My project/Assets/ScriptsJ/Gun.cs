@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class Gun : MonoBehaviour
 {
     InputManager inputManager;
@@ -24,3 +24,4 @@ public class Gun : MonoBehaviour
         }
     }
 }
+*/
