@@ -10,6 +10,8 @@ public class SoldierFollow : MonoBehaviour
     public float chaseRange = 5;
     public float attackRange = 2;
     public float speed = 3;
+    public int health;
+    public int maxHealth;
 
     public Animator animator;
 
@@ -17,6 +19,7 @@ public class SoldierFollow : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -60,6 +63,21 @@ public class SoldierFollow : MonoBehaviour
                 currentState = "ChaseState";
             }
         }
-
     }
+
+    //*public void TakeDamage(int damege)
+    //*{
+    //*health -= TakeDamage();
+
+    //*if(health < 0)
+    //*{
+    //*Die();
+    //*}
+
+    //*}
+
+    //* private void die()
+    //*{
+
+    //*}
 }

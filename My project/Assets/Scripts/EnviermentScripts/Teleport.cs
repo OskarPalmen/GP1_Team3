@@ -9,7 +9,11 @@ public class Teleport : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = teleportTarget.transform.position;
+
+        if (other.tag == "Player")
+        {
+            Player.transform.position = teleportTarget.transform.position;
+        }
     }
 
 
