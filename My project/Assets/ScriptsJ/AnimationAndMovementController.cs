@@ -17,6 +17,7 @@ public class AnimationAndMovementController : MonoBehaviour
     // variables to store player input values
     Vector2 currentMovementInput;
     Vector3 currentMovement;
+    
     Vector3 currentRunMovement;
     Vector3 appliedMovement;
     bool isMovementPressed;
@@ -135,7 +136,7 @@ public class AnimationAndMovementController : MonoBehaviour
         // The change in position our character should point to
         positionToLookAt.x = currentMovement.x;
         positionToLookAt.y = 0.0f;
-        positionToLookAt.z = currentMovement.z;
+        positionToLookAt.z = 0.0f;
         // the current rotation of our character
         Quaternion currentRotation = transform.rotation;
 
@@ -151,12 +152,15 @@ public class AnimationAndMovementController : MonoBehaviour
     // Handler function to set the player input values
     void onMovementInput (InputAction.CallbackContext context)
     {
+        
         currentMovementInput = context.ReadValue<Vector2>();
         currentMovement.x = currentMovementInput.x * speed;
         //currentMovement.z = currentMovementInput.y * speed;
+        currentMovement.z = 0;
         currentRunMovement.x = currentMovementInput.x * runMultiplier;
         //currentRunMovement.z = currentMovementInput.y * runMultiplier;
         isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != zero;
+
     }
 
     void handleAnimation()
@@ -225,26 +229,32 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
-    
+    void LateUpdate()
+    {
+        if (this.transform.position.z != 0)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
         handleRotation();
         handleAnimation();
-        
 
 
         if (isRunPressed)
         {
             appliedMovement.x = currentRunMovement.x;
-            appliedMovement.z = currentRunMovement.z;
+            
         }
         else
         {
             appliedMovement.x = currentMovement.x;
-            appliedMovement.z = currentMovement.z;
+          
         }
+
 
         characterController.Move(appliedMovement * Time.deltaTime);
 
