@@ -15,4 +15,24 @@ public class BossBullet : MonoBehaviour
     {
         transform.Translate(velocity * speed * Time.deltaTime);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        //if the projectile collides with a player tag destroy the projectile
+        if (other.CompareTag("Player"))
+        {
+            DestroyProjectile();
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            DestroyProjectile();
+        }
+    }
+
+    void DestroyProjectile()
+    {
+        Destroy(gameObject);
+    }
+
+
 }
