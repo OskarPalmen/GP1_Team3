@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5674997202680642134}
   - component: {fileID: 1564844453088260359}
   - component: {fileID: -6186484667223824748}
+  - component: {fileID: -8595614540906984294}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -156,3 +157,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8595614540906984294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227905694022134991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe66e7dde9a070a46b4326eae24b4a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: 
+    clip: {fileID: 8300000, guid: de2c411d970d80d4a8b0518dba691e20, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
