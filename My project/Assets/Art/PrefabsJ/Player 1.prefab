@@ -1862,7 +1862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7403526278645523490}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 8.635, z: 0}
+  m_LocalPosition: {x: 45, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1924,8 +1924,6 @@ MonoBehaviour:
   isJumping: 0
   movementSpeed: 9
   rotationSpeed: 14
-  jumpHeight: 50
-  gravityIntensity: -1
 --- !u!114 &7674118635380518959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,6 +1953,8 @@ MonoBehaviour:
   verticalInput: 0
   horizontalInput: 0
   jump_Input: 0
+  shootInput: 0
+  resetInput: 0
 --- !u!95 &7674118634006652850
 Animator:
   serializedVersion: 4
