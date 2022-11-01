@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class PlayerManager : MonoBehaviour
 {
     Animator animator;
@@ -34,3 +34,4 @@ public class PlayerManager : MonoBehaviour
         animator.SetBool("isGrounded", playerLocomotion.isGrounded);
     }
 }
+*/
