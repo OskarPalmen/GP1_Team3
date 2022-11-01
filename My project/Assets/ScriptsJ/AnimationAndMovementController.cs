@@ -153,9 +153,9 @@ public class AnimationAndMovementController : MonoBehaviour
     {
         currentMovementInput = context.ReadValue<Vector2>();
         currentMovement.x = currentMovementInput.x * speed;
-        currentMovement.z = currentMovementInput.y * speed;
+        //currentMovement.z = currentMovementInput.y * speed;
         currentRunMovement.x = currentMovementInput.x * runMultiplier;
-        currentRunMovement.z = currentMovementInput.y * runMultiplier;
+        //currentRunMovement.z = currentMovementInput.y * runMultiplier;
         isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != zero;
     }
 
