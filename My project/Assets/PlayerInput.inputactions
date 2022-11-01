@@ -154,6 +154,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "2da8d827-4681-4aab-b5e2-129cef5521ba",
+                    "expectedControlType": "Delta",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -187,6 +196,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0f6cb8b-5396-4f5b-957b-622fbebea20c",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
