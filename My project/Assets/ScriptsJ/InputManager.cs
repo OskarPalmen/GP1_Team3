@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
 public class InputManager : MonoBehaviour
 {
     PlayerControls playerControls;
@@ -95,3 +95,4 @@ public class InputManager : MonoBehaviour
         }
     }
 }
+*/
