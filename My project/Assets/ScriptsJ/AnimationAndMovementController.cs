@@ -149,6 +149,7 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
+
     // Handler function to set the player input values
     void onMovementInput (InputAction.CallbackContext context)
     {
