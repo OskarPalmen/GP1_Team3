@@ -65,19 +65,22 @@ public class SoldierFollow : MonoBehaviour
         }
     }
 
-    //*public void TakeDamage(int damege)
-    //*{
-    //*health -= TakeDamage();
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
 
-    //*if(health < 0)
-    //*{
-    //*Die();
-    //*}
+    if(health < 0)
+    {
+      Die();
+    }
 
-    //*}
+    }
 
-    //* private void die()
-    //*{
+     private void Die()
+    {
+        // play die animationn
+        Debug.Log("enemy is dead");
+        // disable the script and the collider
 
-    //*}
+    }
 }
