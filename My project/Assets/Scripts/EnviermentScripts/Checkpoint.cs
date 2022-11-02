@@ -6,6 +6,7 @@ public class Checkpoint : MonoBehaviour
 {
 
     private GameMaster gm;
+   
 
     void Start()
     {
@@ -14,7 +15,11 @@ public class Checkpoint : MonoBehaviour
 
     void OnTriggerEnter(Collider other) { 
     if (other.CompareTag("Player")){
+           
+            Debug.Log("Hello");
+           
             gm.lastCheckPointPos = transform.position;
+            
         }
     }
 }

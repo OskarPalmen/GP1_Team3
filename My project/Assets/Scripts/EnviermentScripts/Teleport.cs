@@ -12,7 +12,14 @@ public class Teleport : MonoBehaviour
 
         if (other.tag == "Player")
         {
+
+            var cc = Player.GetComponent<CharacterController>();
+
+            Debug.Log("Before"+ Player.transform.position);
+            cc.enabled = false;
             Player.transform.position = teleportTarget.transform.position;
+            cc.enabled = true;
+            Debug.Log("After" + Player.transform.position);
         }
     }
 

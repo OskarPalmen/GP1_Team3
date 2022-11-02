@@ -121,8 +121,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< Updated upstream
-=======
     "com.unity.progrids": {
       "version": "3.0.3-preview.6",
       "depth": 0,
@@ -132,7 +130,6 @@
       },
       "url": "https://packages.unity.com"
     },
->>>>>>> Stashed changes
     "com.unity.render-pipelines.core": {
       "version": "12.1.7",
       "depth": 1,
