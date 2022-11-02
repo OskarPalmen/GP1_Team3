@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -25,6 +26,11 @@ public class PlayerHealth : MonoBehaviour
     public void DamagePlayer(int playerDamage)
     {
         currentHealth = currentHealth - playerDamage;
+        if (currentHealth <= 0)
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+        }
     }
 
     public void HealPlayer(int playerHeal)

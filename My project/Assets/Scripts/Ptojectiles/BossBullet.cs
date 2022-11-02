@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BossBullet : MonoBehaviour
+{
+    public Vector2 velocity;
+    public float speed;
+    public float rotation;
+    void Start()
+    {
+        transform.rotation = Quaternion.Euler(0, 0, rotation);
+    }
+    void Update()
+    {
+        transform.Translate(velocity * speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        //if the projectile collides with a player tag destroy the projectile
+        if (other.CompareTag("Player"))
+        {
+            DestroyProjectile();
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            DestroyProjectile();
+        }
+    }
+
+    void DestroyProjectile()
+    {
+        Destroy(gameObject);
+    }
+
+
+}
