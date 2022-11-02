@@ -243,6 +243,9 @@ public class AnimationAndMovementController : MonoBehaviour
         handleRotation();
         handleAnimation();
 
+        
+        
+
 
         if (isRunPressed)
         {
