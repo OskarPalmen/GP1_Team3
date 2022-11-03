@@ -7,13 +7,19 @@ public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
+    public HealthBar healthBar;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+
         currentHealth = totalHealth;
+
+        healthBar = GameObject.FindObjectOfType(typeof(HealthBar)) as HealthBar;
+        healthBar.SetMaxHealth(totalHealth);
+        healthBar.SetHealth(currentHealth);
     }
 
     // Update is called once per frame
@@ -31,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.name);
         }
+        healthBar.SetHealth(currentHealth);
     }
 
     public void HealPlayer(int playerHeal)

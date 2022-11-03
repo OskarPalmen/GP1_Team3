@@ -104,6 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbc85fd7e1709a4cbd71b2fc884ff5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entryDirection: {x: 0, y: 1, z: 0}
+  entryDirection: {x: 0, y: 2, z: 0}
   localDirection: 0
-  triggerScale: {x: 1.5, y: 1.5, z: 1.5}
+  triggerScale: {x: 1.5, y: 2, z: 1.5}
