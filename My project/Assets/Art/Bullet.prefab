@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7443794537765159250}
   - component: {fileID: 1710570685508640187}
   - component: {fileID: 3632849329318451449}
+  - component: {fileID: 4635364543473318908}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -64,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1dff64a2ee5b8cd4ca9353fb91d1a262, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +95,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5198117629211552280}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -128,3 +129,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+--- !u!114 &4635364543473318908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198117629211552280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900914a93b618bf429ece182c19ab458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1

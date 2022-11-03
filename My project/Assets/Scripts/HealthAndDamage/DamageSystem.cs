@@ -23,7 +23,7 @@ public class DamageSystem : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            FindObjectOfType<HealthSystem>().DamagePlayer(damageAmount);
+            FindObjectOfType<HealthSystem>().DamageEnemy(damageAmount);
 
         }
 
