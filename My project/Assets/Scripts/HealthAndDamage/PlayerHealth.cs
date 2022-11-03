@@ -34,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = currentHealth - playerDamage;
         if (currentHealth <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("Dead");
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.name);
         }

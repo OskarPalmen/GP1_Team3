@@ -23,7 +23,7 @@ public class DamagePlayer : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             FindObjectOfType<PlayerHealth>().DamagePlayer(damageAmount);
-            FindObjectOfType<AudioManager>().Play("KnockBackSound");
+            FindObjectOfType<AudioManager>().Play("AAA");
         }
     }
 }

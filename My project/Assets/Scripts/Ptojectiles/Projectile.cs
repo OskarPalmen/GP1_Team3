@@ -17,6 +17,8 @@ public class Projectile : MonoBehaviour
         //the projectile goes after the tag "Player"
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        FindObjectOfType<AudioManager>().Play("Pew");
+
         //the projectile goes after the player's position
         target = new Vector2(player.position.x, player.position.y);
     }
