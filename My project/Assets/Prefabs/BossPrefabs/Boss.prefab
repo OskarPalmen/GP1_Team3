@@ -164,7 +164,7 @@ MonoBehaviour:
   stoppingDistance: 0
   retreatDistance: 0
   startTimeBtwShots: 1
-  projectile: {fileID: 3227905694022134991, guid: 7f4266ec4e93c294180a61c4f6904fa0, type: 3}
+  projectile: {fileID: 7160938710944729023, guid: c2d98a01a44d90e44a3f355692efdea7, type: 3}
 --- !u!1 &6988699497832254956
 GameObject:
   m_ObjectHideFlags: 0

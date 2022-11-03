@@ -75,3 +75,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Pang
+    clip: {fileID: 8300000, guid: 883ed5cfa3a58ac49bdaa729d2a1159c, type: 3}
+    volume: 0.026
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

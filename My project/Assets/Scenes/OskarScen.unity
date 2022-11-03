@@ -160,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 3
   totalHealth: 3
+  healthBar: {fileID: 0}
 --- !u!136 &405321448
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1573,6 +1574,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 405321445}
+    - target: {fileID: 5766494558460949181, guid: e1a1dcbe3d2b61c44a9d86bec79b8aa4, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1a1dcbe3d2b61c44a9d86bec79b8aa4, type: 3}
 --- !u!1001 &6774513947097603158
