@@ -52,8 +52,26 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Theme
-    clip: {fileID: 8300000, guid: 8999d776b3840364fb1a98df169410a4, type: 3}
-    volume: 0.026
+    clip: {fileID: 8300000, guid: d8ef6781c8a84bd4eae820dd832d4dbe, type: 3}
+    volume: 0.016
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Pew
+    clip: {fileID: 8300000, guid: 1002c6fb87c649b4d9d28696c1cf87eb, type: 3}
+    volume: 0.026
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AAA
+    clip: {fileID: 8300000, guid: 4162792b0b74d2c46be7d4aae6dbc1f2, type: 3}
+    volume: 0.026
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Dead
+    clip: {fileID: 8300000, guid: 5222e95ac912d7c4fa210161581c5ead, type: 3}
+    volume: 0.026
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
