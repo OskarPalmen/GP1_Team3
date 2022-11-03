@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 362543416559843740}
   - component: {fileID: 362543416559843741}
   - component: {fileID: 362543416559843738}
+  - component: {fileID: 183503246020472033}
+  - component: {fileID: -6778842664993858775}
   m_Layer: 0
   m_Name: EnemyBob
   m_TagString: Enemy
@@ -117,6 +119,8 @@ MonoBehaviour:
   chaseRange: 5
   attackRange: 1
   speed: 3
+  health: 0
+  maxHealth: 0
   animator: {fileID: 362543417572875629}
 --- !u!54 &362543416559843741
 Rigidbody:
@@ -147,6 +151,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackStrength: 25
+--- !u!114 &183503246020472033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362543416559843683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059d5a2d59cb34d4388405f124da8f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
+--- !u!114 &-6778842664993858775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362543416559843683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323743c82a7302c418d723f019dc2955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  totalHealth: 0
 --- !u!1001 &362543417621723756
 PrefabInstance:
   m_ObjectHideFlags: 0

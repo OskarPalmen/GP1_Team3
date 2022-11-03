@@ -37,5 +37,8 @@ public class HealthSystem : MonoBehaviour
 
     }
 
-    
+    public void DamageEnemy(int enemyDamage)
+    {
+        currentHealth = currentHealth - enemyDamage;
+    }
 }
