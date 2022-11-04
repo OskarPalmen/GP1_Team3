@@ -36,8 +36,8 @@ public class AnimationAndMovementController : MonoBehaviour
     // Jumping variables
     bool isJumpPressed = false;
     float initialJumpVelocity;
-    float maxJumpHeight = 2.2f;
-    float maxJumpTime = 0.8f;
+    float maxJumpHeight = 2.9f;
+    float maxJumpTime = 1.1f;
     bool isJumping = false;
     int isJumpingHash;
     int jumpCountHash;
@@ -79,8 +79,8 @@ public class AnimationAndMovementController : MonoBehaviour
         initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
         float secondJumpGravity = (-2 * (maxJumpHeight + 2)) / Mathf.Pow((timeToApex * 1.25f), 2);
         float secondJumpInitialVelocity = (2 * (maxJumpHeight + 2)) / (timeToApex * 1.25f);
-        float thirdJumpGravity = (-2 * (maxJumpHeight + 4)) / Mathf.Pow((timeToApex * 1.5f), 2);
-        float thirdJumpInitialVelocity = (2 * (maxJumpHeight + 4)) / (timeToApex * 1.5f);
+        float thirdJumpGravity = (-2 * (maxJumpHeight + 3)) / Mathf.Pow((timeToApex * 1.5f), 2);
+        float thirdJumpInitialVelocity = (2 * (maxJumpHeight + 3)) / (timeToApex * 1.5f);
 
         initialJumpVelocities.Add(1, initialJumpVelocity);
         initialJumpVelocities.Add(2, secondJumpInitialVelocity);
@@ -116,7 +116,7 @@ public class AnimationAndMovementController : MonoBehaviour
 
     IEnumerator jumpResetRoutine()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         jumpCount = 0;
     }
 
@@ -149,6 +149,19 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
+   /* void HandleAimingPos()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        {
+            Vector3 positionToLookAt = hit.point;
+            positionToLookAt.z = transform.position.z;
+            
+        }
+    }*/
 
     // Handler function to set the player input values
     void onMovementInput (InputAction.CallbackContext context)
@@ -195,7 +208,7 @@ public class AnimationAndMovementController : MonoBehaviour
     void handleGravity()
     {
         bool isFalling = currentMovement.y <= 0.0f || !isJumpPressed;
-        float fallMultiplier = 2.0f;
+        float fallMultiplier = 5.0f;
         // Apply proper gravity if the player is grounded or not
         if (characterController.isGrounded)
         {
@@ -229,7 +242,7 @@ public class AnimationAndMovementController : MonoBehaviour
             appliedMovement.y = (previousYVelocity + currentMovement.y) * .5f;           
         }
     }
-
+    // Restrics the character from moving or being pushed in the z axis
     void LateUpdate()
     {
         if (this.transform.position.z != 0)

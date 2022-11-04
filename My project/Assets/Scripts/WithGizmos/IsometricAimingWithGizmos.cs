@@ -82,7 +82,7 @@ namespace BarthaSzabolcs.IsometricAiming
                 if (ignoreHeight)
                 {
                     // Ignore the height difference.
-                    direction.z = 0;
+                    direction.y = 0;
                 }
 
                 // Make the transform look at the mouse position.
@@ -96,6 +96,7 @@ namespace BarthaSzabolcs.IsometricAiming
 
             if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, groundMask))
             {
+
                 return (success: true, position: hitInfo.point);
             }
             else
