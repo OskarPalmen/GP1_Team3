@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2335701828308431538}
   - component: {fileID: 6653884293723127741}
   - component: {fileID: 6653884293723127738}
+  - component: {fileID: -8218171135094699752}
   m_Layer: 0
   m_Name: PlayerCharacter3.5Shooting 1
   m_TagString: Player
@@ -102,6 +103,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationFactorPerFrame: 50
   speed: 9
+--- !u!114 &-8218171135094699752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335701828300996800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0831dc96a2583145b78d653a8536c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 3
+  totalHealth: 3
+  healthBar: {fileID: 0}
 --- !u!1 &2335701828300996802
 GameObject:
   m_ObjectHideFlags: 0

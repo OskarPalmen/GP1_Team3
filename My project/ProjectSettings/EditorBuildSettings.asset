@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jesper.unity
     guid: bd825163e0e4cd94489457de988fb562
+  - enabled: 1
+    path: Assets/Scenes/Demo2.unity
+    guid: 40a5b2dc9861c684583252fc1e019302
   m_configObjects: {}

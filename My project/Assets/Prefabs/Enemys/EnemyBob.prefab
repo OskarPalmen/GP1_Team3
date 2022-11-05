@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 362543416559843738}
   - component: {fileID: 183503246020472033}
   - component: {fileID: -6778842664993858775}
+  - component: {fileID: 1160580787690589720}
   m_Layer: 0
   m_Name: EnemyBob
   m_TagString: Enemy
@@ -176,8 +177,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323743c82a7302c418d723f019dc2955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  totalHealth: 0
+  currentHealth: 3
+  totalHealth: 3
+--- !u!136 &1160580787690589720
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362543416559843683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.59
+  m_Height: 2.15
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &362543417621723756
 PrefabInstance:
   m_ObjectHideFlags: 0
