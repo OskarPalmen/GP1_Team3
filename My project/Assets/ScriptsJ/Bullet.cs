@@ -22,6 +22,10 @@ public class Bullet : MonoBehaviour
         {
             DestroyProjectile();
         }
+        else if (other.CompareTag("Enemy"))
+        {
+            DestroyProjectile();
+        }
     }
 
     //funktion that destroys the projectile
