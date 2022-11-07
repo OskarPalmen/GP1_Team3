@@ -50,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = totalHealth;
         }
+        healthBar.SetHealth(currentHealth);
     }
 
 
