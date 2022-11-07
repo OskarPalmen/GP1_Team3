@@ -30,14 +30,18 @@ public class AnimationAndMovementController : MonoBehaviour
     int zero = 0;
 
     // gravity variables
-    float gravity = -9.8f;
+    public float gravity = -9.8f;
     float groundedGravity = -.05f;
 
     // Jumping variables
     bool isJumpPressed = false;
     float initialJumpVelocity;
-    float maxJumpHeight = 2.2f;
-    float maxJumpTime = 0.8f;
+    public float maxJumpHeight = 2.2f;
+    public float maxJumpTime = 0.8f;
+    public float secondJumpMod = 2f;
+    public float thirdJumpMod = 4f;
+    public float secondJumpTime = 1.25f;
+    public float thirdJumpTime = 1.5f;
     bool isJumping = false;
     int isJumpingHash;
     int jumpCountHash;
@@ -77,10 +81,10 @@ public class AnimationAndMovementController : MonoBehaviour
         float timeToApex = maxJumpTime / 2;
         gravity = (-2 * maxJumpHeight) / Mathf.Pow(timeToApex, 2);
         initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
-        float secondJumpGravity = (-2 * (maxJumpHeight + 2)) / Mathf.Pow((timeToApex * 1.25f), 2);
-        float secondJumpInitialVelocity = (2 * (maxJumpHeight + 2)) / (timeToApex * 1.25f);
-        float thirdJumpGravity = (-2 * (maxJumpHeight + 4)) / Mathf.Pow((timeToApex * 1.5f), 2);
-        float thirdJumpInitialVelocity = (2 * (maxJumpHeight + 4)) / (timeToApex * 1.5f);
+        float secondJumpGravity = (-2 * (maxJumpHeight + secondJumpMod)) / Mathf.Pow((timeToApex * secondJumpTime), 2);
+        float secondJumpInitialVelocity = (2 * (maxJumpHeight + secondJumpMod)) / (timeToApex * secondJumpTime);
+        float thirdJumpGravity = (-2 * (maxJumpHeight + thirdJumpMod)) / Mathf.Pow((timeToApex * thirdJumpTime), 2);
+        float thirdJumpInitialVelocity = (2 * (maxJumpHeight + thirdJumpMod)) / (timeToApex * thirdJumpTime);
 
         initialJumpVelocities.Add(1, initialJumpVelocity);
         initialJumpVelocities.Add(2, secondJumpInitialVelocity);

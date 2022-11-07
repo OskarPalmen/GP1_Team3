@@ -191,7 +191,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2034682543881484227, guid: 0ed9a5078453dcc44b7282780f695d4e, type: 3}
       propertyPath: m_Name
-      value: SolidPlatforrm Variant (11)
+      value: SolidPlatforrm Variant (11) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668125047843345805, guid: 0ed9a5078453dcc44b7282780f695d4e, type: 3}
+      propertyPath: m_Intensity
+      value: 368.39166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405957535151131777, guid: 0ed9a5078453dcc44b7282780f695d4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916401560658968169, guid: 0ed9a5078453dcc44b7282780f695d4e, type: 3}
+      propertyPath: m_Intensity
+      value: 368.39166
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed9a5078453dcc44b7282780f695d4e, type: 3}
