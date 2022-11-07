@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class EnemyHealthBar : MonoBehaviour
 {
     public Slider slider;
 
@@ -11,12 +11,13 @@ public class HealthBar : MonoBehaviour
     {
         slider = GetComponent<Slider>();
     }
-    public void SetMaxHealth(int health)
+
+    public void SetEnemyMaxHealth(int health)
     {
         slider.maxValue = health;
     }
 
-    public void SetHealth(int health)
+    public void SetEnemyHealth(int health)
     {
         slider.value = health;
     }
