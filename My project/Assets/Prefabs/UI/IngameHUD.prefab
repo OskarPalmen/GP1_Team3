@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 2862281232343781688}
   - component: {fileID: 2862281232343781691}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: IngameHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,6 +718,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScore: {fileID: 2862281233288855047}
+  playerPos: {fileID: 0}
+  startPos: {fileID: 0}
+  multiplier: 10
   currentHighScore: 0
   enemyScore: 0
   progressScore: 0
