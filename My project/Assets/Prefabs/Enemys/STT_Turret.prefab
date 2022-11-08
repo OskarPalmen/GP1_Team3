@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 1110097671699842373}
   - component: {fileID: 1110097671699842369}
   - component: {fileID: 1110097671699842374}
-  - component: {fileID: 1110097671699842375}
   - component: {fileID: -6531321920286084730}
   m_Layer: 0
   m_Name: STT_Turret
@@ -118,21 +117,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1110097671699842375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110097671699842377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323743c82a7302c418d723f019dc2955, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 20
-  totalHealth: 100
-  healthBar: {fileID: 0}
 --- !u!114 &-6531321920286084730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +155,7 @@ GameObject:
   - component: {fileID: 1110097671707191792}
   - component: {fileID: 1110097671707191793}
   - component: {fileID: 1110097671707191798}
+  - component: {fileID: 2309185288369703318}
   m_Layer: 0
   m_Name: Head
   m_TagString: Enemy
@@ -494,6 +479,20 @@ MonoBehaviour:
   startTimeBtwShots: 2
   projectile: {fileID: 1318844620888158215, guid: a2bdb2e7371fe81428916008f97c68a9, type: 3}
   shootingRange: 20
+--- !u!114 &2309185288369703318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110097671707191746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323743c82a7302c418d723f019dc2955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 20
+  totalHealth: 20
 --- !u!1 &1110097671974139584
 GameObject:
   m_ObjectHideFlags: 0
