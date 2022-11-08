@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1110097671699842369}
   - component: {fileID: 1110097671699842374}
   - component: {fileID: 1110097671699842375}
+  - component: {fileID: -6531321920286084730}
   m_Layer: 0
   m_Name: STT_Turret
   m_TagString: Enemy
@@ -131,6 +132,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 20
   totalHealth: 100
+  healthBar: {fileID: 0}
+--- !u!114 &-6531321920286084730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110097671699842377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0f830c1ad661641a730c8f2d87916d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  stoppingDistance: 0
+  retreatDistance: 0
+  startTimeBtwShots: 0
+  projectile: {fileID: 0}
+  shootingRange: 5
 --- !u!1 &1110097671707191746
 GameObject:
   m_ObjectHideFlags: 0
