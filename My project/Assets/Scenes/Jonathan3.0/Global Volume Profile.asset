@@ -30,19 +30,19 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0}
   lowestCloudAltitude:
     m_OverrideState: 1
-    m_Value: 0.01
+    m_Value: 100
   cloudThickness:
     m_OverrideState: 1
     m_Value: 10000
   fadeInMode:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   fadeInStart:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 98.06
   fadeInDistance:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 175.04
   numPrimarySteps:
     m_OverrideState: 0
     m_Value: 64
@@ -243,7 +243,7 @@ MonoBehaviour:
     m_Value: 2.5
   shapeOffset:
     m_OverrideState: 1
-    m_Value: {x: 245.66, y: 77.7, z: 2.05}
+    m_Value: {x: 248.2, y: 77.7, z: -1.53}
   erosionFactor:
     m_OverrideState: 0
     m_Value: 0.5
