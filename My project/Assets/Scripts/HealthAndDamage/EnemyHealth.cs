@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
-    public EnemyHealthBar healthBar;
+    private EnemyHealthBar healthBar;
 
 
 
