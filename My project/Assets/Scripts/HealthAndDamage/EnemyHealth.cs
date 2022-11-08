@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
+    public EnemyHealthBar healthBar;
 
 
 
@@ -13,6 +14,10 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         currentHealth = totalHealth;
+
+        healthBar = GetComponentInChildren<EnemyHealthBar>();
+        healthBar.SetEnemyMaxHealth(totalHealth);
+        healthBar.SetEnemyHealth(currentHealth);
     }
 
     // Update is called once per frame
@@ -29,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        healthBar.SetEnemyHealth(currentHealth);
     }
 
     void DestroyGameObject()
