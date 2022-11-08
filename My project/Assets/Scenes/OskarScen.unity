@@ -1482,6 +1482,10 @@ PrefabInstance:
       propertyPath: targeting.targets.Array.data[0]
       value: 
       objectReference: {fileID: 405321451}
+    - target: {fileID: 1110097671707191798, guid: 178f5ee2dfd72d54185f61e78ffc7d08, type: 3}
+      propertyPath: shootingRange
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178f5ee2dfd72d54185f61e78ffc7d08, type: 3}
 --- !u!1001 &3757643577617122608
