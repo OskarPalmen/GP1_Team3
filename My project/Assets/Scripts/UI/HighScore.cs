@@ -41,4 +41,9 @@ public class HighScore : MonoBehaviour
     {
         enemyScore += score;
     }
+
+    public float GetScore()
+    {
+        return currentHighScore;
+    }
 }

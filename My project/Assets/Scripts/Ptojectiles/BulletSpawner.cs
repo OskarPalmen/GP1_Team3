@@ -14,11 +14,13 @@ public class BulletSpawner : MonoBehaviour
     float timer;
     public float bulletSpeed;
     public Vector2 bulletVelocity;
-
+    public float shootingRange = 5f;
+    private Transform player;
 
     float[] rotations;
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         timer = cooldown;
         rotations = new float[numberOfBullets];
         if (!isRandom)
@@ -34,12 +36,16 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer <= 0)
+        if (Vector2.Distance(transform.position, player.transform.position) < shootingRange)
         {
-            SpawnBullets();
-            timer = cooldown;
+            if (timer <= 0)
+            {
+                SpawnBullets();
+                timer = cooldown;
+            }
+            timer -= Time.deltaTime;
         }
-        timer -= Time.deltaTime;
+            
     }
 
     // Select a random rotation from min to max for each bullet

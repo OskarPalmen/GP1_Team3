@@ -6,6 +6,7 @@ public class NewFollow : MonoBehaviour
 {
     private Transform target;
     public float speed = 3;
+    public float followRange = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,16 +20,20 @@ public class NewFollow : MonoBehaviour
         //movements and speed
         float distance = Vector3.Distance(transform.position, target.position);
 
-        if (target.position.x > transform.position.x)
+        if (Vector2.Distance(transform.position, target.transform.position) < followRange)
         {
-            //move right
-            transform.Translate(transform.right * speed * Time.deltaTime);
+            if (target.position.x > transform.position.x)
+            {
+                //move right
+                transform.Translate(transform.right * speed * Time.deltaTime);
+            }
+            else
+            {
+                // move left
+                transform.Translate(-transform.right * speed * Time.deltaTime);
+            }
         }
-        else
-        {
-            // move left
-            transform.Translate(-transform.right * speed * Time.deltaTime);
-        }
+
     }
 }
 
