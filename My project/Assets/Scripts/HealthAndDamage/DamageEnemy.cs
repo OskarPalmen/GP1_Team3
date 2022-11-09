@@ -6,22 +6,12 @@ public class DamageEnemy : MonoBehaviour
 {
     public int damageAmount = 1;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {
-            FindObjectOfType<EnemyHealth>().DamageEnemy(damageAmount);
+            other.gameObject.GetComponent<EnemyHealth>().DamageEnemy(damageAmount);
         }
     }
 
