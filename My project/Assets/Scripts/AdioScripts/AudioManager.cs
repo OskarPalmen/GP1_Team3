@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     private static AudioManager instance;
     public Sound[] sounds;
-
+    
 
 
     // Start is called before the first frame update
@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            
         }
 
         if (instance == null)
@@ -37,7 +38,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
 
-        Play("Theme");
+     
 
     }
 
