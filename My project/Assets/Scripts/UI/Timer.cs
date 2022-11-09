@@ -30,4 +30,9 @@ public class Timer : MonoBehaviour
 
         timerText.text = timerString;
     }
+
+    public float GetTime()
+    {
+        return currentTime;
+    }
 }
