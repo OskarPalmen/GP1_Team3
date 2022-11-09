@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-namespace BarthaSzabolcs.IsometricAiming
-{
+
     public class IsometricAimingWithGizmos : MonoBehaviour
     {
         #region Datamembers
@@ -10,6 +9,7 @@ namespace BarthaSzabolcs.IsometricAiming
 
         [Header("Aim")]
         [SerializeField] private bool aim;
+        [SerializeField] private LayerMask mouseAimMask;
         [SerializeField] private LayerMask groundMask;
         [SerializeField] private bool ignoreHeight;
         [SerializeField] private Transform aimedTransform;
@@ -45,7 +45,8 @@ namespace BarthaSzabolcs.IsometricAiming
 
             if (laserRenderer != null)
             {
-                laserRenderer.SetPositions(new Vector3[]{
+            
+            laserRenderer.SetPositions(new Vector3[]{
                     Vector3.zero,
                     Vector3.zero
                 });
@@ -82,10 +83,10 @@ namespace BarthaSzabolcs.IsometricAiming
                 if (ignoreHeight)
                 {
                     // Ignore the height difference.
-                    direction.y = 0;
+                    direction.x = 0;
                 }
 
-                // Make the transform look at the mouse position.
+                // Make the transform look at the mouse position.---------------------------
                 aimedTransform.forward = direction;
             }
         }
@@ -93,8 +94,9 @@ namespace BarthaSzabolcs.IsometricAiming
         private (bool success, Vector3 position) GetMousePosition()
         {
             var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+           
 
-            if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, groundMask))
+        if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, groundMask))
             {
 
                 return (success: true, position: hitInfo.point);
@@ -140,4 +142,3 @@ namespace BarthaSzabolcs.IsometricAiming
 
         #endregion
     }
-}
