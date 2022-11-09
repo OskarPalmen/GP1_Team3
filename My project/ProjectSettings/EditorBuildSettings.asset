@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Jesper.unity
-    guid: bd825163e0e4cd94489457de988fb562
   - enabled: 1
     path: Assets/Scenes/Albin menu/Main Menu.unity
     guid: e1d9ed4a6d4b6974eb81c0d8ee31f2a5
   - enabled: 1
-    path: Assets/Scenes/Demo2.unity
-    guid: 40a5b2dc9861c684583252fc1e019302
+    path: Assets/Scenes/Jonathan3.0/Jonathan3.0.unity
+    guid: 6556e9740aaecdf41ba172ef2aeac807
   m_configObjects: {}

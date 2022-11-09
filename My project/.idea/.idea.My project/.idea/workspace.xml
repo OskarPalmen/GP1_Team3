@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b722b8-067d-4387-bd50-95fd856f2d4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/MenuButton01Cyan_n.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/MenuButton01Cyan_n.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/MenuButton01Cyan_p.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/MenuButton01Cyan_p.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/SliderCyan01_Btn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/SliderCyan01_Btn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/SwitchCyan_Off.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/SwitchCyan_Off.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/SwitchCyan_On.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/SwitchCyan_On.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/Window005_Cyan.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/Window005_Cyan.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/Common/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/SettingsMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Panel_Attribute.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Panel_Attribute.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Title_Goods.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Title_Goods.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Your Ranking_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Your Ranking_bg.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.progrids/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.progrids/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
@@ -42,6 +36,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/ProjectUprising\My project.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\abbe2\Desktop\ProjectUprising" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -71,7 +73,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667910947278</updated>
-      <workItem from="1667910970459" duration="3670000" />
+      <workItem from="1667910970459" duration="4155000" />
+      <workItem from="1667984855415" duration="1182000" />
     </task>
     <servers />
   </component>
