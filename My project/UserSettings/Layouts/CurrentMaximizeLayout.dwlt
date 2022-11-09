@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 55898
+  controlID: 60326
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 55899
+  controlID: 60254
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -245,14 +245,14 @@ MonoBehaviour:
     y: 660
     width: 411
     height: 279
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 8}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
   - {fileID: 8}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,21 +322,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Albin menu/prefabs
+    - Assets/ScriptsJ
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes/Albin menu/prefabs
+  - Assets/ScriptsJ
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\abbe2\Documents\GitHub\GP1_Team3\My project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 178}
-    m_SelectedIDs: 76f60900
-    m_LastClickedID: 652918
+    scrollPos: {x: 0, y: 258}
+    m_SelectedIDs: 56820000
+    m_LastClickedID: 33366
     m_ExpandedIDs: 000000006281000064810000688100006a8100006c8100006e810000d481000052820000da890000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -390,24 +390,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d633f1ff
-    m_LastClickedInstanceID: -969770
+    m_SelectedInstanceIDs: 5e0f0000
+    m_LastClickedInstanceID: 3934
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000bcccffffb86b0000325f000088230000f87e0000eaa500003c5e0000e4650000767b0000767c0000a07e0000b06100006a12feff087801003af3030014f40300367e0000000000002a7e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: prefabs
-      m_OriginalName: prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 652918
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 55876
+  controlID: 60327
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1109,7 +1109,7 @@ MonoBehaviour:
     m_CachedPref: 177
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -969770
+  m_LastInspectedObjectInstanceID: 3934
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

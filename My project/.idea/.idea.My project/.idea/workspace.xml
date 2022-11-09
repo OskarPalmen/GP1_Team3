@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b722b8-067d-4387-bd50-95fd856f2d4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/LevelLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LevelLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PauseMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PauseMenu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/Paused.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu assets/Paused.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/LevelLoader.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/LevelLoader.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/LoadingScreen.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/LoadingScreen.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/MainMenu.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/MainMenu.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/PauseMenu.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/PauseMenu.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/SettingsMenu.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/SettingsMenu.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/StatsMenu.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Menu prefabs/StatsMenu.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/GameIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/GameIcon.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/IngameHUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/IngameHUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WinWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WinWindow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WinWindow.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WinWindow.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Pause Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Albin menu/Pause Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonathan3.0/Jonathan3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonathan3.0/Jonathan3.0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJ/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsJ/Gun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667910947278</updated>
       <workItem from="1667910970459" duration="4155000" />
-      <workItem from="1667984855415" duration="10947000" />
+      <workItem from="1667984855415" duration="11853000" />
     </task>
     <servers />
   </component>
