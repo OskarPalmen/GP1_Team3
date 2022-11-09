@@ -21,7 +21,7 @@ public class DamageEnemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            FindObjectOfType<EnemyHealth>().DamageEnemy(damageAmount);
+            other.gameObject.GetComponent<EnemyHealth>().DamageEnemy(damageAmount);
         }
     }
 

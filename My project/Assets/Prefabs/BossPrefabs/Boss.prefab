@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6988699496276139345}
   - component: {fileID: 6988699496276139344}
   - component: {fileID: 6988699496276139347}
+  - component: {fileID: 3374558028831918720}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -119,6 +120,7 @@ MonoBehaviour:
   retreatDistance: 0
   startTimeBtwShots: 9
   projectile: {fileID: 362543416559843683, guid: 1f407926a46f44c4fb20176bf9d34128, type: 3}
+  shootingRange: 10
 --- !u!54 &6988699496276139345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -148,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  followRange: 10
 --- !u!114 &6988699496276139347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +167,23 @@ MonoBehaviour:
   stoppingDistance: 0
   retreatDistance: 0
   startTimeBtwShots: 1
-  projectile: {fileID: 7160938710944729023, guid: c2d98a01a44d90e44a3f355692efdea7, type: 3}
+  projectile: {fileID: 1318844620888158215, guid: a2bdb2e7371fe81428916008f97c68a9, type: 3}
+  shootingRange: 10
+--- !u!114 &3374558028831918720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988699496276139352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323743c82a7302c418d723f019dc2955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 20
+  totalHealth: 20
+  healthBar: {fileID: 0}
 --- !u!1 &6988699497832254956
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,3 +236,4 @@ MonoBehaviour:
   cooldown: 1
   bulletSpeed: 5
   bulletVelocity: {x: 1, y: 0}
+  shootingRange: 10
