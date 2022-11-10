@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1b722b8-067d-4387-bd50-95fd856f2d4e" name="Changes" comment="" />
+    <list default="true" id="c1b722b8-067d-4387-bd50-95fd856f2d4e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/HealthBarBillboard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/HealthBarBillboard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/IngameHUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/IngameHUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WinWindow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WinWindow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonathan3.0/Jonathan3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonathan3.0/Jonathan3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthAndDamage/BossHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthAndDamage/BossHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WinScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WinScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJ/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsJ/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +33,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthAndDamage/BossHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -102,5 +117,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AdioScripts/AudioManager.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\abbe2\Documents\GitHub\GP1_Team3\My project\Assets\Scripts\AdioScripts\AudioManager.cs" initialLine="47" containingFunctionPresentation="method 'Play'">
+            <startOffsets>
+              <option value="812" />
+            </startOffsets>
+            <endOffsets>
+              <option value="813" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
