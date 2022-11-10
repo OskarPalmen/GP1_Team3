@@ -261,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8128665607823907339, guid: de11456689bc37b458257033125aee54, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 8128665607823907340, guid: de11456689bc37b458257033125aee54, type: 3}
       propertyPath: m_RootOrder
@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8128665607823907340, guid: de11456689bc37b458257033125aee54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.16
+      value: 8.28
       objectReference: {fileID: 0}
     - target: {fileID: 8128665607823907340, guid: de11456689bc37b458257033125aee54, type: 3}
       propertyPath: m_LocalPosition.y
