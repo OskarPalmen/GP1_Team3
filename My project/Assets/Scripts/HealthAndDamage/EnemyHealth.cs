@@ -32,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = currentHealth - enemyDamage;
         if (currentHealth <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("EnemyDead");
             Destroy(gameObject);
         }
         healthBar.SetEnemyHealth(currentHealth);
