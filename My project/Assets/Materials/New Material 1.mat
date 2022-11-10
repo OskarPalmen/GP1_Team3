@@ -291,11 +291,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
-<<<<<<< HEAD
 --- !u!114 &1478393421567135906
-=======
---- !u!114 &5216683209824943756
->>>>>>> Jesper
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
