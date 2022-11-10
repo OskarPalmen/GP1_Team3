@@ -51,8 +51,8 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Theme
-    clip: {fileID: 8300000, guid: cf61ca3bb007c9544bf537ea06b64e5d, type: 3}
+  - name: 
+    clip: {fileID: 0}
     volume: 0.016
     pitch: 1
     loop: 1
@@ -77,6 +77,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Pang
     clip: {fileID: 8300000, guid: 883ed5cfa3a58ac49bdaa729d2a1159c, type: 3}
+    volume: 0.026
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDead
+    clip: {fileID: 8300000, guid: 73e964f4ad4ff2b46a47eaee7c736e6c, type: 3}
     volume: 0.026
     pitch: 1
     loop: 0

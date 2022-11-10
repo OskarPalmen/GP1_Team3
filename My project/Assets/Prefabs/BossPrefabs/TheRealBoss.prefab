@@ -118,11 +118,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139352, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: m_Name
-      value: Boss
+      value: TheRealBoss
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139352, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988699496276139354, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139355, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: shootingRange
@@ -146,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139359, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.02
+      value: 7.14
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139359, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -186,6 +190,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
+--- !u!1 &8128665607823907339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6988699496276139352, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
+  m_PrefabInstance: {fileID: 1167007792620029779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3768879845289570475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128665607823907339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.43, y: 2.83, z: 6.26}
+  m_Center: {x: 0, y: 0, z: 1.86}
 --- !u!4 &8128665607823907340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6988699496276139359, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
