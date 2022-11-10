@@ -26,6 +26,7 @@ public class WinScreen : MonoBehaviour
     {
         highScore = FindObjectOfType<HighScore>();
         timer = FindObjectOfType<Timer>();
+        WinScreen scoreScreen = new WinScreen();
     }
 
     // Update is called once per frame

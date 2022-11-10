@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     [Header("Timer Settings")]
-    public float currentTime;
+    public static float currentTime;
 
 
     void Start()
