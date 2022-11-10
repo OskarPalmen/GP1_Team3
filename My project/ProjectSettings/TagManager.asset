@@ -7,7 +7,7 @@ TagManager:
   - Enemy
   - Wall
   - GM
-  - boss
+  - Boss
   layers:
   - Default
   - TransparentFX
