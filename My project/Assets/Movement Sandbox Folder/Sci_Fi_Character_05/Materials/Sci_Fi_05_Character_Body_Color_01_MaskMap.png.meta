@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: dc867095c9e41b843946f9127f46e9f1
-=======
-guid: 6cb4e0c2df0ccfe4e8c1bffee0b561c7
->>>>>>> Jesper
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,21 +113,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> Jesper
   spriteSheet:
     serializedVersion: 2
     sprites: []
