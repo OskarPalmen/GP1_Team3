@@ -24,7 +24,11 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 1
+<<<<<<< HEAD
     supportVolumetricClouds: 1
+=======
+    supportVolumetricClouds: 0
+>>>>>>> Jesper
     supportLightLayers: 0
     supportDistortion: 1
     supportTransparentBackface: 1

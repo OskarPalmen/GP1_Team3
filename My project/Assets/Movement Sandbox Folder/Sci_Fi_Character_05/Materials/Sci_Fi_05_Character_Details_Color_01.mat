@@ -95,7 +95,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 0b88ae39655a3a74f9565d713131379c, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: 25d1ed8f87d52b8449bc893aa37fc78e, type: 3}
+>>>>>>> Jesper
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -294,7 +298,11 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+<<<<<<< HEAD
 --- !u!114 &9202414652678433971
+=======
+--- !u!114 &2302409369586201180
+>>>>>>> Jesper
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
