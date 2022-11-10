@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139352, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: m_Name
-      value: Boss
+      value: TheRealBoss
       objectReference: {fileID: 0}
     - target: {fileID: 6988699496276139352, guid: 569d9787e3d11574b832da4a9b9507b6, type: 3}
       propertyPath: m_IsActive
