@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d4541ea6dde77ef4eb3e9486aa35afd6
+=======
+guid: 42ae3388d94255b49995f3b27a15a9ce
+>>>>>>> Jesper
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
