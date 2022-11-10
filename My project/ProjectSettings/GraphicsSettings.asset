@@ -39,11 +39,7 @@ GraphicsSettings:
   m_PreloadedShaders: []
   m_PreloadShadersBatchTimeLimit: -1
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-<<<<<<< HEAD
   m_CustomRenderPipeline: {fileID: 11400000, guid: a9e24e0d805d26b4aad9da1d894f4474, type: 2}
-=======
-  m_CustomRenderPipeline: {fileID: 11400000, guid: cb16df4440a8e2f49af83ff8f523b374, type: 2}
->>>>>>> Jesper
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
   m_DefaultRenderingPath: 1
@@ -67,8 +63,4 @@ GraphicsSettings:
   m_DefaultRenderingLayerMask: 257
   m_LogWhenShaderIsCompiled: 0
   m_SRPDefaultSettings:
-<<<<<<< HEAD
     UnityEngine.Rendering.HighDefinition.HDRenderPipeline: {fileID: 11400000, guid: 01643c87495b06848aa0530026dd073c, type: 2}
-=======
-    UnityEngine.Rendering.HighDefinition.HDRenderPipeline: {fileID: 11400000, guid: 71184c47ec521cc4d83b0cef0ec52ddb, type: 2}
->>>>>>> Jesper

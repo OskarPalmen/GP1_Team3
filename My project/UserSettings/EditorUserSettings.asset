@@ -6,66 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-<<<<<<< HEAD
+      value: 54555750500c5c5d0b5d5f2312730e444e164f2f292b71617f7b4931b1b16039
+      flags: 0
+    RecentlyUsedSceneGuid-1:
       value: 5a0352515c050d090e58087113225a44404e1d7c7d7b7335792a4f61b5b2643a
       flags: 0
-    RecentlyUsedSceneGuid-1:
+    RecentlyUsedSceneGuid-2:
       value: 5a57015e0001510b0f580a704374594445164e78757c75602b7f1f63b0e26060
       flags: 0
-    RecentlyUsedSceneGuid-2:
+    RecentlyUsedSceneGuid-3:
       value: 5509525600025b0f08585875417b08444e15412e7a2a226578781830b2b3306a
       flags: 0
-    RecentlyUsedSceneGuid-3:
+    RecentlyUsedSceneGuid-4:
       value: 5208550304500858590b0e234371084445151a782e7972317c701961b0b1606f
       flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 5b52510300045d0e0c5a092744735c4441154a7c7f7d70342e7b4831e4b2316b
-      flags: 0
     RecentlyUsedSceneGuid-5:
-      value: 5706035051530f5f0e580e23427a59444e4f417c742b70677d7f4d63e1e1636f
-=======
-      value: 5406555150020a0e58085a764171094440164e722f787436292f4531b7b46c60
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 5005005203570b0c09080d744271594413151b7c742c22327b7e1c66b4e26d3c
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 5b080750500d0d095d5c5a2112725944444f1e787c2d2762297b4e63b6b2643c
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 5553505f03055b5f0b5f097314775e44124f4b722f7f23697c784b62e0b5636d
->>>>>>> Jesper
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 010004550005510a0f5b0f7115745a44424f4a7e752d70327a2c4565e7e63660
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 0753570452005c5d5a580921417b0a44154f4f297d787f317c791b60b3e16468
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-<<<<<<< HEAD
-      value: 0250055656020a0f090b557a13200e4442154b2879797667792b4a36b1b06568
-      flags: 0
-    RecentlyUsedSceneGuid-7:
       value: 0600505f00515d5a5b0a5820467a08441315407b2f782268282c4e62e4b2356d
       flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5b52510300045d0e0c5a092744735c4441154a7c7f7d70342e7b4831e4b2316b
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 5706035051530f5f0e580e23427a59444e4f417c742b70677d7f4d63e1e1636f
+      flags: 0
     RecentlyUsedSceneGuid-8:
-      value: 0701000451060a02590a5a2042725d444f154e7a7b2a27607f7c4e31b7b16668
+      value: 0250055656020a0f090b557a13200e4442154b2879797667792b4a36b1b06568
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 55040150000c5e0f5d0f0d27132759444715197b7b7a23367f281832e1b8646f
-=======
-      value: 0654505104505d595b57582748770e4441154e727c7f73637b7f4e36bae56468
-      flags: 0
-    RecentlyUsedSceneGuid-7:
-      value: 5755570707055d035c0f5b7411260944131648287f7e70612c7f1b32bab26669
-      flags: 0
-    RecentlyUsedSceneGuid-8:
-      value: 000906500701500f595c5f7013205c4441161d287f7927607a7e1935b7e26d60
-      flags: 0
-    RecentlyUsedSceneGuid-9:
-      value: 01550c5450045f08085e097613270644424f417e797f223574714535e0b5626a
->>>>>>> Jesper
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
