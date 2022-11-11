@@ -8,7 +8,7 @@ public class Gun : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
-
+    
 
 
     private void Update()
@@ -16,11 +16,14 @@ public class Gun : MonoBehaviour
         if (PauseMenu.isPaused) {
             return;
         }
+        else if (BossHealth.bossIsDead) {
+            return;
+        }
         else if (Input.GetKeyDown(KeyCode.Mouse0)) {
                 var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
                 bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
-                FindObjectOfType<AudioManager>().Play("Pang");
-            }
+                FindObjectOfType<AudioManager>().Play("Pang"); 
+        }
     }
 }
 
