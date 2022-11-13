@@ -10,17 +10,33 @@ public class DoorTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
 
     {
-        _doorAnim.SetBool("isOpening", true);
+
+        if (other.tag == "Player")
+        {
+
+            _doorAnim.SetBool("isOpening", true);
+        }
+            
 
     }
 
     private void OnTriggerExit(Collider other)
+
+
+
+
     {
-        _doorAnim.SetBool("isOpening", false);
+        if (other.tag == "Player")
+
+        {
+            _doorAnim.SetBool("isOpening", false);
+        }
+       
     }
     // Start is called before the first frame update
     void Start()
     {
+
         _doorAnim = this.transform.parent.GetComponent<Animator>();
     }
 
