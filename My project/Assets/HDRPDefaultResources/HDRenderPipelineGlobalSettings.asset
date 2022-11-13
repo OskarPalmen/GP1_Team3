@@ -12,13 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781cc897cf8675041a751163b51f97dd, type: 3}
   m_Name: HDRenderPipelineGlobalSettings
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   m_DefaultVolumeProfile: {fileID: 11400000, guid: a4e63011b988a0d448a8182c9768817f, type: 2}
   m_LookDevVolumeProfile: {fileID: 11400000, guid: 01927dd957b2d074790ab9637ead0835, type: 2}
-=======
-  m_DefaultVolumeProfile: {fileID: 11400000, guid: 3a174a0e74002284db779391750ec9a5, type: 2}
-  m_LookDevVolumeProfile: {fileID: 11400000, guid: b3654f30c8f2b7244999e9a8b621b45e, type: 2}
->>>>>>> Jesper
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
       data1: 72198260625768269
@@ -90,13 +85,8 @@ MonoBehaviour:
   shaderVariantLogLevel: 0
   lensAttenuationMode: 0
   diffusionProfileSettingsList:
-<<<<<<< HEAD
   - {fileID: 11400000, guid: d4541ea6dde77ef4eb3e9486aa35afd6, type: 2}
   - {fileID: 11400000, guid: 68e4a81caccae7d4ca5f6efb1a89ab58, type: 2}
-=======
-  - {fileID: 11400000, guid: 42ae3388d94255b49995f3b27a15a9ce, type: 2}
-  - {fileID: 11400000, guid: 58c5a377a270d004590109c63042d04c, type: 2}
->>>>>>> Jesper
   rendererListCulling: 0
   DLSSProjectId: 000000
   useDLSSCustomProjectId: 0
