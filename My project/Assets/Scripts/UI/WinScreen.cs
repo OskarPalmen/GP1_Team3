@@ -39,11 +39,7 @@ public class WinScreen : MonoBehaviour
     {
         Time.timeScale = 0f;
         scoreValue = highScore.GetScore();
-        highScore.currentHighScore = 0f;
-        highScore.progressScore = 0f;
-        highScore.enemyScore = 0f;
         timeValue = timer.GetTime();
-        timer.currentTime = 0f;
         timeMultiValue = (timeValue - timeBreakpoint) / timeBreakpoint;
         if (timeMultiValue >= 0)
         {
