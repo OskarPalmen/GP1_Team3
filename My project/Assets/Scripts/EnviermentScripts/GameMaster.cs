@@ -6,6 +6,8 @@ public class GameMaster : MonoBehaviour
 {
     private static GameMaster instance;
     public Vector2 lastCheckPointPos;
+    public float timer;
+    public float highscore;
 
 
     void Awake()

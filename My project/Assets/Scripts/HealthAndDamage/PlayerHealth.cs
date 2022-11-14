@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public int totalHealth;
     public HealthBar healthBar;
+    private GameMaster gm;
 
 
 
@@ -16,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     {
 
         currentHealth = totalHealth;
-
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         healthBar = GameObject.FindObjectOfType(typeof(HealthBar)) as HealthBar;
         healthBar.SetMaxHealth(totalHealth);
         healthBar.SetHealth(currentHealth);
@@ -34,6 +35,8 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = currentHealth - playerDamage;
         if (currentHealth <= 0)
         {
+            gm.highscore = FindObjectOfType<HighScore>().progressScore;
+            gm.timer = FindObjectOfType<Timer>().currentTime;
             FindObjectOfType<AudioManager>().Play("Dead");
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.name);
