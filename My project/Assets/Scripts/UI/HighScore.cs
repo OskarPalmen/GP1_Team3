@@ -13,8 +13,8 @@ public class HighScore : MonoBehaviour
     [Header("Values")]
     public float multiplier = 10f;
     public float currentHighScore;
-    public float enemyScore = 0f;
-    public float progressScore = 0f;
+    public float enemyScore;
+    public float progressScore;
     //public float progressStart; //use if changeing scene
 
 
@@ -22,6 +22,7 @@ public class HighScore : MonoBehaviour
     {
         playerPos = FindObjectOfType<CharacterController>().transform;
         startPos = FindObjectOfType<SpawnPoint>().transform;
+
     }
 
     void Update()
@@ -34,7 +35,6 @@ public class HighScore : MonoBehaviour
         }
         currentHighScore = progressScore + enemyScore;
         highScore.text = currentHighScore.ToString("0");
-        //AddScore(1);
     }
 
     public void AddScore(int score)

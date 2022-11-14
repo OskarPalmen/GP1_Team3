@@ -19,7 +19,7 @@ public class SettingsMenu : MonoBehaviour {
         int currectResolutionIndex = 0;
         List<string> options = new List<string>();
         for (int i = 0; i < resolutions.Length; i++) {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
+            string option = resolutions[i].width + "x" + resolutions[i].height + " (" + resolutions[i].refreshRate + ")";
             options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width && 
