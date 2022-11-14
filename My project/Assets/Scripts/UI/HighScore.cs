@@ -5,6 +5,7 @@ using TMPro;
 
 public class HighScore : MonoBehaviour
 {
+
     [Header("Component")]
     public TextMeshProUGUI highScore;
     public Transform playerPos;
@@ -20,9 +21,10 @@ public class HighScore : MonoBehaviour
 
     void Start()
     {
+        GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         playerPos = FindObjectOfType<CharacterController>().transform;
         startPos = FindObjectOfType<SpawnPoint>().transform;
-
+        progressScore = gm.highscore;
     }
 
     void Update()

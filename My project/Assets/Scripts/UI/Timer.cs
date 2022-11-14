@@ -5,6 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+
     [Header("Component")]
     public TextMeshProUGUI timerText;
 
@@ -14,10 +15,11 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        
+        GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        currentTime = gm.timer;
     }
 
-    
+
     void Update()
     {
         currentTime += Time.deltaTime;

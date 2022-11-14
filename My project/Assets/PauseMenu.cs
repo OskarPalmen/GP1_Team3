@@ -38,6 +38,10 @@ public class PauseMenu : MonoBehaviour {
     
     public void ReturnToMainMenu()
     {
+        GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        gm.timer = 0f;
+        gm.highscore= 0f;
+        gm.lastCheckPointPos = new Vector2(-199.9f, 0f);
         SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 }
