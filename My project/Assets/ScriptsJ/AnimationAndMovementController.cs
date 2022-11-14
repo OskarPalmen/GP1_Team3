@@ -9,6 +9,7 @@ public class AnimationAndMovementController : MonoBehaviour
     PlayerInput playerInput;
     CharacterController characterController;
     Animator animator;
+    private GameMaster gm;
 
     // variables to store optimized setter/getter parameter IDs
     int isWalkingHash;
@@ -57,6 +58,7 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput = new PlayerInput();
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 
         // Set the parameter hash references 
         isWalkingHash = Animator.StringToHash("isWalking");
@@ -72,6 +74,8 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput.CharacterControls.Run.canceled += onRun;
         playerInput.CharacterControls.Jump.started += onJump;
         playerInput.CharacterControls.Jump.canceled += onJump;
+
+        this.transform.SetPositionAndRotation(new Vector3(gm.lastCheckPointPos.x, gm.lastCheckPointPos.y, 0), new Quaternion(0f,90f,0f,0f));
 
         setupJumpVariables();
     }

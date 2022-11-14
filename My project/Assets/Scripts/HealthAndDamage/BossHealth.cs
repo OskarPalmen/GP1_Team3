@@ -8,13 +8,9 @@ public class BossHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
-    public GameObject winScreen;
     public static bool bossIsDead = false;
     private EnemyHealthBar healthBar;
-    public WinScreen WinScript;
-
-
-
+    public WinScreen winScript;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +18,11 @@ public class BossHealth : MonoBehaviour
         currentHealth = totalHealth;
 
         healthBar = GetComponentInChildren<EnemyHealthBar>();
-        //healthBar.SetEnemyMaxHealth(totalHealth);
+        healthBar.SetEnemyMaxHealth(totalHealth);
         healthBar.SetEnemyHealth(currentHealth);
-        GetComponent<WinScreen>().OnWin();
-        
+        winScript = FindObjectOfType<WinScreen>();
+        winScript.gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void DamageBoss(int BossDamage)
@@ -33,12 +30,13 @@ public class BossHealth : MonoBehaviour
         currentHealth = currentHealth - BossDamage;
         if (currentHealth <= 0)
         {
-            FindObjectOfType<AudioManager>().Play("EnemyDead");
-            Destroy(gameObject);
+            //FindObjectOfType<AudioManager>().Play("EnemyDead");
+            
             bossIsDead = true;
-            WinScript.OnWin();
+            winScript.OnWin();
             Time.timeScale = 0;
-            winScreen.SetActive(true);
+            winScript.gameObject.SetActive(true);
+            Destroy(gameObject);
         }
         healthBar.SetEnemyHealth(currentHealth);
     }
