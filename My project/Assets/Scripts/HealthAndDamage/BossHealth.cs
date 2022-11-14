@@ -8,13 +8,14 @@ public class BossHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
-    public static bool bossIsDead = false;
+    public static bool bossIsDead;
     private EnemyHealthBar healthBar;
     public WinScreen winScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        bossIsDead = false;
         currentHealth = totalHealth;
 
         healthBar = GetComponentInChildren<EnemyHealthBar>();
