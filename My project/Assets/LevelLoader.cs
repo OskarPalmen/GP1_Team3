@@ -16,7 +16,8 @@ public class LevelLoader : MonoBehaviour {
 
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Single);
         
         while (!operation.isDone) {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
