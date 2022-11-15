@@ -7,10 +7,11 @@ public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
+    public float invulTime = 0.6f;
     public HealthBar healthBar;
     private GameMaster gm;
 
-
+    private bool invulnerable = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void DamagePlayer(int playerDamage)
     {
-        currentHealth = currentHealth - playerDamage;
+        if (!invulnerable)
+        {
+            currentHealth = currentHealth - playerDamage;
+            StartCoroutine(InvulnerableTimer());
+        }
+        
         if (currentHealth <= 0)
         {
             gm.highscore = FindObjectOfType<HighScore>().progressScore;
@@ -56,7 +62,12 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-
+    IEnumerator InvulnerableTimer()
+    {
+        invulnerable = true;
+        yield return new WaitForSeconds(invulTime);
+        invulnerable = false;
+    }
 
 }
 
