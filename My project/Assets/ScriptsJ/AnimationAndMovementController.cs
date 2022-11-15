@@ -51,12 +51,22 @@ public class AnimationAndMovementController : MonoBehaviour
     Dictionary<int, float> jumpGravities = new Dictionary<int, float>();
     Coroutine currentJumpResetRoutine = null;
 
+    private bool spawn = true;
+
+    void Start()
+    {
+        spawn = true;
+        GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        transform.position = gm.lastCheckPointPos;
+    }
+
     void Awake()
     {
         // Initially set reference variables
         playerInput = new PlayerInput();
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        //gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 
         // Set the parameter hash references 
         isWalkingHash = Animator.StringToHash("isWalking");
@@ -73,7 +83,19 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput.CharacterControls.Jump.started += onJump;
         playerInput.CharacterControls.Jump.canceled += onJump;
 
+        //transform.position = gm.lastCheckPointPos;
+
         setupJumpVariables();
+    }
+
+    private void FixedUpdate()
+    {
+        if (spawn)
+        {
+            GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+            transform.position = gm.lastCheckPointPos;
+            spawn = false;
+        }
     }
 
     void setupJumpVariables()

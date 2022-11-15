@@ -7,16 +7,18 @@ public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth;
     public int totalHealth;
+    public float invulTime = 0.6f;
     public HealthBar healthBar;
+    private GameMaster gm;
 
-
+    private bool invulnerable = false;
 
     // Start is called before the first frame update
     void Start()
     {
 
         currentHealth = totalHealth;
-
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         healthBar = GameObject.FindObjectOfType(typeof(HealthBar)) as HealthBar;
         healthBar.SetMaxHealth(totalHealth);
         healthBar.SetHealth(currentHealth);
@@ -31,9 +33,16 @@ public class PlayerHealth : MonoBehaviour
 
     public void DamagePlayer(int playerDamage)
     {
-        currentHealth = currentHealth - playerDamage;
+        if (!invulnerable)
+        {
+            currentHealth = currentHealth - playerDamage;
+            StartCoroutine(InvulnerableTimer());
+        }
+        
         if (currentHealth <= 0)
         {
+            gm.highscore = FindObjectOfType<HighScore>().progressScore;
+            gm.timer = FindObjectOfType<Timer>().currentTime;
             FindObjectOfType<AudioManager>().Play("Dead");
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.name);
@@ -53,7 +62,12 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-
+    IEnumerator InvulnerableTimer()
+    {
+        invulnerable = true;
+        yield return new WaitForSeconds(invulTime);
+        invulnerable = false;
+    }
 
 }
 

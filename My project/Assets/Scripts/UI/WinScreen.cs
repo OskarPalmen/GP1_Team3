@@ -26,6 +26,7 @@ public class WinScreen : MonoBehaviour
     {
         highScore = FindObjectOfType<HighScore>();
         timer = FindObjectOfType<Timer>();
+        WinScreen scoreScreen = new WinScreen();
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class WinScreen : MonoBehaviour
 
     public void OnWin()
     {
+        Time.timeScale = 0f;
         scoreValue = highScore.GetScore();
         timeValue = timer.GetTime();
         timeMultiValue = (timeValue - timeBreakpoint) / timeBreakpoint;

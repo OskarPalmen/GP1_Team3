@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour
 {
-    private static GameMaster instance;
-    public Vector2 lastCheckPointPos;
+    //private static GameMaster instance;
+    public Vector3 lastCheckPointPos;
+    public float timer;
+    public float highscore;
 
 
-    void Awake()
+    /*void Awake()
     {
         if(instance == null) {
             instance = this;
             DontDestroyOnLoad(instance);
         }else
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
         }
-    }
+    }*/
 }
