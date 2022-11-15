@@ -532,7 +532,7 @@ MonoBehaviour:
   retreatDistance: 0
   startTimeBtwShots: 1
   projectile: {fileID: 1318844620888158215, guid: a2bdb2e7371fe81428916008f97c68a9, type: 3}
-  shootingRange: 20
+  shootingRange: 30
 --- !u!114 &7053190318443427935
 MonoBehaviour:
   m_ObjectHideFlags: 0
