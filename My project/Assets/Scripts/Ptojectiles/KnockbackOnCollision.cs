@@ -17,7 +17,7 @@ public class KnockbackOnCollision : MonoBehaviour
             Vector3 direction = collision.transform.position - transform.position;
             direction.y = 0;
             rb.AddForce(direction.normalized * knockbackStrength, ForceMode.Impulse);
-            FindObjectOfType<AudioManager>().Play("KnockBackSound");
+            //FindObjectOfType<AudioManager>().Play("KnockBackSound");
 
         }
 

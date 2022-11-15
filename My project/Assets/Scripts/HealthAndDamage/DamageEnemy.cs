@@ -9,7 +9,7 @@ public class DamageEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.GetComponent<EnemyHealth>().DamageEnemy(damageAmount);
         }

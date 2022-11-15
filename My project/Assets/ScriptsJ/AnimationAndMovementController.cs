@@ -9,7 +9,6 @@ public class AnimationAndMovementController : MonoBehaviour
     PlayerInput playerInput;
     CharacterController characterController;
     Animator animator;
-    private GameMaster gm;
 
     // variables to store optimized setter/getter parameter IDs
     int isWalkingHash;
@@ -52,13 +51,22 @@ public class AnimationAndMovementController : MonoBehaviour
     Dictionary<int, float> jumpGravities = new Dictionary<int, float>();
     Coroutine currentJumpResetRoutine = null;
 
+    private bool spawn = true;
+
+    void Start()
+    {
+        spawn = true;
+        GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        transform.position = gm.lastCheckPointPos;
+    }
+
     void Awake()
     {
         // Initially set reference variables
         playerInput = new PlayerInput();
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        //gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 
         // Set the parameter hash references 
         isWalkingHash = Animator.StringToHash("isWalking");
@@ -75,9 +83,19 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput.CharacterControls.Jump.started += onJump;
         playerInput.CharacterControls.Jump.canceled += onJump;
 
-        this.transform.SetPositionAndRotation(new Vector3(gm.lastCheckPointPos.x, gm.lastCheckPointPos.y, 0), new Quaternion(0f,90f,0f,0f));
+        //transform.position = gm.lastCheckPointPos;
 
         setupJumpVariables();
+    }
+
+    private void FixedUpdate()
+    {
+        if (spawn)
+        {
+            GameMaster gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+            transform.position = gm.lastCheckPointPos;
+            spawn = false;
+        }
     }
 
     void setupJumpVariables()
