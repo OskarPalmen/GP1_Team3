@@ -13,13 +13,13 @@ public class Checkpoint : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
-    void OnTriggerEnter(Collider other) { 
-    if (other.CompareTag("Player")){
-           
-            Debug.Log("Hello");
-           
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")){
+
+
             gm.lastCheckPointPos = transform.position;
-            
+
         }
     }
 }

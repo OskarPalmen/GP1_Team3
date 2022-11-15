@@ -10,6 +10,7 @@ public class EnemyShoting : MonoBehaviour
     public float retreatDistance;
 
     private float timeBtwShots;
+    private Transform muzzle;
     public float startTimeBtwShots;
 
     public GameObject projectile;
@@ -21,10 +22,15 @@ public class EnemyShoting : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        
 
         timeBtwShots = startTimeBtwShots;
 
+    }
+
+    private void Awake()
+    {
+        muzzle = GetComponentInChildren<Muzzle>().transform;
     }
 
     // Update is called once per frame
@@ -49,7 +55,7 @@ public class EnemyShoting : MonoBehaviour
             if (timeBtwShots <= 0)
             {
 
-                Instantiate(projectile, transform.position, Quaternion.identity);
+                Instantiate(projectile, muzzle.transform.position, Quaternion.identity);
                 timeBtwShots = startTimeBtwShots;
                 FindObjectOfType<AudioManager>().Play("Pew");
             }
